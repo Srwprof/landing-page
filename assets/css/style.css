@@ -1,0 +1,144 @@
+@font-face {
+    font-family:garujada;
+    src: url('../fonts/Gurajada-Regular.ttf');
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:garujada;
+
+}
+
+a{
+    text-decoration:none;
+ 
+}
+
+
+body{
+    background-color:rgb(1, 1, 3);
+
+}
+
+.layout-flex {
+    height:100vh;
+}
+
+.layout-flex > .header-flex{
+    background-color:white;   
+}
+
+.header-flex{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    
+}
+
+.header-flex > .links {
+    display:flex;
+    width:60%;
+    justify-content:space-evenly;
+}
+
+.header-flex > .links > a {
+    color:grey;
+    font-size:25px;
+    transition:0.3s ease-in-out;
+    font-weight:bolder;
+}
+
+.header-flex > .links > a:last-child{
+    border-right:solid 2px grey;
+    padding-right:4px;
+}
+
+.header-flex > .links > a:hover {
+    color:black;
+    transition:0.3s ease-in-out;
+}
+
+.header-flex > a:last-child{
+    background-color:purple;
+    font-size:26px;
+    height:3.9pc;
+    width:10%;
+    text-align:center;
+    transition:0.3s;
+    align-content:center;
+    color:black;
+
+}
+
+.header-flex > a:last-child:hover{
+    color:white;
+    transition:0.3s;
+}
+
+/* terminar header */
+
+
+.main-flex{
+    display:flex;
+    flex-flow:column;
+    text-align:center;
+    
+    height:15rem;
+}
+
+.main-flex > p {
+    color:white;
+    font-size:24px;
+}
+
+.main-flex > a {
+    font-size:25px;
+    padding:4px 10px;
+    background-color:rgb(80, 62, 95);
+    border-radius:10px;
+    color:black;
+    margin:0 auto;
+    align-items:flex-end;
+    box-shadow:0px 1px 0px 2px rgb(29, 29, 29);
+    transition:0.3s ease-in-out;
+    
+}
+
+
+.main-flex > a:hover{
+    background-color: rgb(2, 136, 53);
+    transition:0.3s ease-in-out;
+    transform:translateY(-5px);
+    color:white;
+    box-shadow:0px 1px 0px 2px white;
+}
+
+.main-flex > a:active{
+    transform:translateY(0px);
+    background-color: brown;
+}
+
+
+.board-flex{
+    background-color:rgb(7, 27, 24);
+    display:flex;
+    justify-content:space-evenly;
+    padding:20px;
+    margin:0 auto;
+    width:90%;
+    border-radius:10px;
+}
+
+.board-flex > .moldure {
+    border:1px solid black;
+    padding:10px;
+    font-size:16px;
+    background:linear-gradient(to bottom, rgb(58, 131, 76), 90%, rgba(40, 190, 60, 0.685));
+}
+
+
+.board-flex > .moldure > p {
+    border-top:1px solid white;
+}
